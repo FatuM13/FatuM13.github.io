@@ -1,8 +1,21 @@
 # Project template
-- name: Project name
-  link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
+- name: Integration module for Delo and IDMS (Interdepartmental Document Management System) 
+  link: http://e-office.by/produkty/smdo
   quote: >
-    Short overview of the project (optional)
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+Module for documents exchange between 2 businesses (or state enterprises). 
+Responsibilities: 
+•	Developed an application for the documents synchronization.
+•	Provided relation by 2 links – file and mail.
+•	Developed specialized format of data exchange in XML. 
+•	Developed a module to provide user notification about the received information.
+•	Implemented operations of filling data of companies from xml-catalog in electronic document management system “DELO”.  
+•	Followed up by testing (user interface, errors with all possible inputs, debugging, publishing) apps after project completion
+Technologies and Tools: C#, WPF, notification, smtp/pop3, xml, git.
+
+- name: Windows Workflow Foundation project for different customers 
+  quote: >
+  description: | # this will include new lines to allow paragraphs
+Several Windows Workflow Foundation project for different customers, again in conjunction with the API-interface EDS "DELO".
+Team size: 1 team members.
+Technologies and Tools: C#, Windows Workflow Foundation.
