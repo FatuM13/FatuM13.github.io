@@ -1,9 +1,17 @@
 # Experience template
-- company: Company name
-  link: Link to company (optional)
-  job_title: Job title
-  dates: Date Range (eg. November 2016 - present)
+- company: ООО «Электронное ДЕЛО»
+  link: http://e-office.by/
+  job_title: Software Developer
+  dates: January 2012 — November 2017
   quote: >
-   Short description of the company (optional)
+   Implementation, development, testing and maintenance, technical support for electronic document management systems.
   description: | # this will include new lines to allow paragraphs
-    Description of role
+    C# WinForms Project -  preparation of initial data(text files) for their subsequent use at formation of monthly reports, division of an initial Excel file into some parts according to certain parameters(XML, VBA), creation reports with MS Access.
+- company: Open Joint Stock Company "Belvnesheconombank"
+  link: https://www.belveb.by/
+  job_title: Communications Specialist
+  dates: March 2009 — January 2012
+  quote: >
+   Bank, communication department
+  description: | # this will include new lines to allow paragraphs
+    C# WinForms Project -  preparation of initial data(text files) for their subsequent use at formation of monthly reports, division of an initial Excel file into some parts according to certain parameters(XML, VBA), creation reports with MS Access.
