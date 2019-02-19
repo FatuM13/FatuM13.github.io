@@ -37,21 +37,23 @@ more_content: | # this will include new lines to allow paragraphs
 
   Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
   Padawans (Completed tasks: 14):
-
-  [FancyCalc](https://github.com/FatuM13/FancyCalc)
-  [PadawansTask1](https://github.com/FatuM13/PadawansTask1)
-  [PadawansTask2](https://github.com/FatuM13/PadawansTask2)
-  [PadawansTask3](https://github.com/FatuM13/PadawansTask3)
-  [PadawansTask4](https://github.com/FatuM13/PadawansTask4)
-  [PadawansTask5](https://github.com/FatuM13/PadawansTask5)
-  [PadawansTask6](https://github.com/FatuM13/PadawansTask6)
-  [PadawansTask7](https://github.com/FatuM13/PadawansTask7)
-  [PadawansTask8](https://github.com/FatuM13/PadawansTask8)
-  #[PadawansTask9](https://github.com/FatuM13/PadawansTask9)
+  
+<p>[FancyCalc](https://github.com/FatuM13/FancyCalc)</p>
+<p>[PadawansTask1](https://github.com/FatuM13/PadawansTask1)</p>
+<p>[PadawansTask2](https://github.com/FatuM13/PadawansTask2)</p>
+<p>[PadawansTask3](https://github.com/FatuM13/PadawansTask3)</p>
+<p>[PadawansTask4](https://github.com/FatuM13/PadawansTask4)</p>
+<p>[PadawansTask5](https://github.com/FatuM13/PadawansTask5)</p>
+<p>[PadawansTask6](https://github.com/FatuM13/PadawansTask6)</p>
+<p>[PadawansTask7](https://github.com/FatuM13/PadawansTask7)</p>
+<p>[PadawansTask8](https://github.com/FatuM13/PadawansTask8)</p>
+<!--
+[PadawansTask9](https://github.com/FatuM13/PadawansTask9)
   #[PadawansTask10](https://github.com/FatuM13/PadawansTask10)
   #[PadawansTask11](https://github.com/FatuM13/PadawansTask11)
   #[PadawansTask12](https://github.com/FatuM13/PadawansTask12)
-  [PadawansTask13](https://github.com/FatuM13/PadawansTask13)
+  -->
+<p>[PadawansTask13](https://github.com/FatuM13/PadawansTask13)</p>
  
 
 # Footer
