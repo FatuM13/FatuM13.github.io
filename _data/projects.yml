@@ -2,8 +2,7 @@
 - name: Integration module for Delo and IDMS (Interdepartmental Document Management System) 
   link: http://e-office.by/produkty/smdo
   quote: >
-  description: |  
-Module for documents exchange between 2 businesses (or state enterprises). 
+  description: |  Module for documents exchange between 2 businesses (or state enterprises). 
 Responsibilities: 
 •	Developed an application for the documents synchronization.
 •	Provided relation by 2 links – file and mail.
