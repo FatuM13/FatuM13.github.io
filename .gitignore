@@ -1,0 +1,9 @@
+# Внутренние файлы проекта — не публикуются на GitHub Pages
+.kilo/
+memory-bank/
+README.md
+.verify.py
+
+# Служебное
+Thumbs.db
+desktop.ini

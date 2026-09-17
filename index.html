@@ -1,528 +1,1020 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Nice to see you on my page!</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Разработанные проекты — YouTube Summarizer, LiveClasses AI Agent, Kufar PC Monitor</title>
+  <meta name="description" content="Портфолио реализованных проектов: суммаризатор YouTube-видео, Telegram-агент расписания LiveClasses на Cloudflare и мониторинг объявлений Kufar с оценкой цена/качество." />
+  <meta name="color-scheme" content="dark light" />
+  <style>
+    :root {
+      --bg: #0a0e16;
+      --bg-soft: #0f1521;
+      --card: #121a27;
+      --card-soft: #18212f;
+      --border: #24303f;
+      --text: #e6ebf3;
+      --muted: #98a4b5;
+      --accent: #22d3ee;
+      --accent-2: #a78bfa;
+      --chip-bg: #1b2534;
+      --ok: #34d399;
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+      --radius: 18px;
+    }
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Victor Ko</a></h1>
-					<p>Software Engineer<br />
-					in Minsk</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Skills</a></li>
-						<li><a href="#three">Projects</a></li>
-						<li><a href="#four">Progress by the course</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-					</ul>
-				</footer>
-			</section>
+    html[data-theme="light"] {
+      --bg: #f4f7fb;
+      --bg-soft: #ffffff;
+      --card: #ffffff;
+      --card-soft: #f8fafc;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #5c6779;
+      --accent: #0891b2;
+      --accent-2: #6d28d9;
+      --chip-bg: #eef2f7;
+      --ok: #059669;
+      --shadow: 0 14px 35px rgba(15, 23, 42, 0.10);
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    * { box-sizing: border-box; }
 
-				<!-- Main -->
-					<div id="main">
+    html { scroll-behavior: smooth; }
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Nice to see you on my page!</h2>
-										<p>Some words about me</p>
-									</header>
-									<p>I have over 5 years of experience as C#/VB developer. I received most of my experience in  <a href="http://e-office.by/">"Elektornnoe Delo" LLC</a> - this company is engaged in implementation, development, testing and maintenance, technical support for electronic document management systems. The biggest project was <a href="http://e-office.by/produkty/smdo">Module for documents exchange</a> between businesses (or state enterprises). Also there were other smaller projects on C#, VB, VBA.</p>
-									<p>It was desktop development. Now I want to go into the field of web development.</p>
-									<p>Now you can check out <a href="http://nikolas13spider-001-site1.dtempurl.com/">my ASP.Net MVC Core app</a> (Login and password: zala@yandex.by). It is ASP.Net MVC Core Web application with a custom displaing order of individually predetermined TV-channel list. At the moment, about 140 channels are available for selection. Also, the user can display different modes of TV program - "all day", "until the end of the day" and " soon and now".</p>
-								</div>
-							</section>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1100px 520px at 12% -8%, rgba(34, 211, 238, 0.14), transparent 60%),
+        radial-gradient(900px 480px at 92% 4%, rgba(167, 139, 250, 0.14), transparent 62%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Languages and technologies</h3>
-									<ul style="list-style-type:none">
-									
-									
-									<li>NET Framework (C#)</li> 
-<li>ASP.NET CORE, ASP.NET MVC</li> 
-<li>HTML, JavaScript, CSS</li> 
-<li>jQuery</li> 
-<li>VCS (Git)</li> 
-<li>VB, VB for Applications</li> 
-</ul>
-<!--
-									<ul class="feature-icons">
-										<li class="fa-code">Write all the code</li>
-										<li class="fa-cubes">Stack small boxes</li>
-										<li class="fa-book">Read books and stuff</li>
-										<li class="fa-coffee">Drink much coffee</li>
-										<li class="fa-bolt">Lightning bolt</li>
-										<li class="fa-users">Shadow clone technique</li>
-									</ul>-->
-								</div>
-							</section>
+    a { color: var(--accent); }
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<p></p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="https://i.gyazo.com/1dcbcd1b535236cdb70c1f6d78449318.png" alt="" /></a>
-											<div class="inner">
-												<h4>Module for documents exchange between businesses (or state enterprises)</h4>
-												<div>Responsibilities:</div>
-<div>- Developed an application for the documents synchronization.</div>
-<div>- Provided relation by links - file and mail.</div>
-<div>- Developed specialized format of data exchange in XML.</div>
-<div>- Developed a module to provide user notification about the received information.</div>
-<div>- Implemented operations of filling data of companies from xml-catalog in electronic document management system "DELO".</div>
-<div>- Followed up by testing (user interface, errors with all possible inputs, debugging, publishing) apps after project completion</div>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="https://i.gyazo.com/b44ff701d835997900df6605509d3e2b.png" alt="" /></a>
-											<div class="inner">
-												<h4>Application "Monitoring of offices."</h4>
-												<p>The app keeps track of real-time changes in the virtual offices of an authorized user in the electronic document management system "DELO". App informs the user about new received documents in his virtual office. Notification happens through popup in the system tray tips change the application icon in the system tray, a sound signal.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="https://i.gyazo.com/e834323fb337604f71a6f106f811b075.png" alt="" /></a>
-											<div class="inner">
-												<h4>Workflow Foundation projects</h4>
-												<p>Several Windows Workflow Foundation projects for different customers, again in conjunction with the API-interface EDS "DELO"</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--accent);
+      color: #04121a;
+      padding: 10px 14px;
+      border-radius: 0 0 10px 0;
+      z-index: 100;
+    }
+    .skip-link:focus { left: 0; }
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Progress by the course</h3>
+    .wrap {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
+    /* ---------- header ---------- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: var(--bg-soft);
+      border-bottom: 1px solid var(--border);
+    }
 
-									<p>
-									<ul style="list-style-type:none">
-										<li>
-											<a href="https://github.com/FatuM13/FibonacciNumbers">FibonacciNumbers</a>
-										</li>
-									</ul>
-									
-									<a href="https://www.codewars.com/users/FatuM13">
-										<img src="https://www.codewars.com/users/FatuM13/badges/large" alt="codewars" data-canonical-src="https://www.codewars.com/users/FatuM13/badges/large" style="max-width:100%;">
-									</a>
-									<ul style="list-style-type:none">
-										<li>
-											<a href="https://github.com/FatuM13/BasicKata8_HexStringToRGB">BasicKata8_HexStringToRGB</a>
-										</li>
-										<li>
-											<a href="https://github.com/FatuM13/BasicKata13_AddOrChangeUrlParameter">BasicKata13_AddOrChangeUrlParameter</a>
-										</li>
-									</ul>
-									
+    .site-header .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 64px;
+    }
 
-									<h5>Padawans (Completed tasks: 15):</h5>
-									<ul style="list-style-type:none">
-										<li><a href="https://github.com/FatuM13/FancyCalc">FancyCalc</a></li>
-										<li><a href="https://github.com/FatuM13/PadawansTask1">PadawansTask1</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask2">PadawansTask2</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask3">PadawansTask3</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask4">PadawansTask4</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask5">PadawansTask5</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask6">PadawansTask6</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask7">PadawansTask7</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask8">PadawansTask8</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask9">PadawansTask9</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask10">PadawansTask10</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask11">PadawansTask11</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask12">PadawansTask12</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask13">PadawansTask13</a><li>
-										<li><a href="https://github.com/FatuM13/PadawansTask15">PadawansTask15</a><li>
-									</ul>
-									
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
 
-									</p>
-								</div>
-							</section>
+    .brand .mark {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #04121a;
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
 
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      padding: 8px 10px;
+      border-radius: 9px;
+    }
+    .nav a:hover { color: var(--text); background: var(--chip-bg); }
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--chip-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font: inherit;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+    .theme-toggle:hover { border-color: var(--accent); }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
+    /* ---------- hero ---------- */
+    .hero { padding: 62px 0 26px; }
 
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+    .hero h1 {
+      margin: 0 0 16px;
+      font-size: clamp(1.9rem, 4.4vw, 3rem);
+      line-height: 1.16;
+      letter-spacing: -0.5px;
+    }
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+    .hero h1 .grad {
+      background: linear-gradient(120deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+    .hero .lead {
+      margin: 0;
+      max-width: 76ch;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.6vw, 1.1rem);
+    }
+    /* ---------- stats ---------- */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 12px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-											<li><a href="#" class="button icon fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+    .stats li {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+    .stats strong { display: block; font-size: 1.12rem; }
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
+    .stats span { color: var(--muted); font-size: 0.86rem; }
 
-								</div>
-							</section>
-						-->
+    /* ---------- sections ---------- */
+    section { padding: 34px 0; }
 
-					</div>
+    .section-title {
+      margin: 0 0 8px;
+      font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+    }
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; All rights reserved.</li><li>Design: Victor Ko</li>
-							</ul>
-						</div>
-					</section>
+    .section-sub {
+      margin: 0 0 22px;
+      color: var(--muted);
+      max-width: 80ch;
+    }
 
-			</div>
+    /* ---------- project cards ---------- */
+    .projects { display: grid; gap: 24px; }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .project {
+      position: relative;
+      background: linear-gradient(180deg, var(--card), var(--bg-soft));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      scroll-margin-top: 84px;
+    }
 
-	</body>
+    .project::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    }
+
+    .project-body { padding: 26px 26px 24px 30px; }
+
+    .project-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .project-index {
+      min-width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      background: var(--chip-bg);
+      border: 1px solid var(--border);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .project h3 {
+      margin: 0;
+      font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+      letter-spacing: -0.2px;
+    }
+
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+
+    .badge {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--chip-bg);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .badge.live { color: #052e2b; background: var(--ok); border-color: var(--ok); }
+    .badge.cloud { color: var(--text); border-color: var(--accent); }
+    .badge.bot { color: var(--text); border-color: var(--accent-2); }
+
+    .project p { margin: 10px 0 0; }
+
+    .project .role { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+
+    .block { margin-top: 20px; }
+
+    .block h4 {
+      margin: 0 0 10px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    /* ---------- flow ---------- */
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .flow li {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--chip-bg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 13px;
+      font-size: 0.86rem;
+    }
+
+    .flow .arrow {
+      background: none;
+      border: none;
+      padding: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    /* ---------- lists / chips / buttons ---------- */
+    ul.features {
+      margin: 0;
+      padding-left: 20px;
+      display: grid;
+      gap: 7px;
+    }
+
+    ul.features li::marker { color: var(--accent); }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .chip {
+      font-size: 0.83rem;
+      padding: 6px 12px;
+      border-radius: 10px;
+      background: var(--chip-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: var(--chip-bg);
+      transition: transform 0.12s ease, border-color 0.12s ease;
+    }
+    .btn:hover { transform: translateY(-1px); border-color: var(--accent); }
+
+    .btn.primary {
+      background: linear-gradient(120deg, var(--accent), var(--accent-2));
+      border-color: transparent;
+      color: #051219;
+    }
+
+    .btn .ico { font-size: 1rem; }
+
+    code.path {
+      font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+      background: var(--chip-bg);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 2px 6px;
+      font-size: 0.86em;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--accent-2);
+      border-radius: 10px;
+      background: var(--card-soft);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* ---------- stack ---------- */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .stack-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .stack-card h3 { margin: 0 0 8px; font-size: 1.02rem; }
+
+    .stack-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+    .stack-card .chips { margin-top: 12px; }
+
+    .stack-card .chips .chip { font-size: 0.78rem; padding: 4px 10px; }
+
+    /* ---------- screenshots ---------- */
+    .shot {
+      margin: 20px 0 0;
+      padding: 0;
+    }
+
+    .shot-link {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--card-soft);
+      box-shadow: var(--shadow);
+      line-height: 0;
+    }
+
+    .shot-link:hover { border-color: var(--accent); }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .shot figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    /* ---------- inactive features ---------- */
+    ul.features.inactive li { color: var(--muted); }
+
+    ul.features.inactive li::marker { color: var(--border); }
+
+    .pill {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      font-weight: 700;
+      padding: 2px 8px;
+      margin-right: 7px;
+      border-radius: 999px;
+      border: 1px dashed var(--border);
+      background: var(--chip-bg);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .block-hint {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* ---------- footer ---------- */
+    .site-footer {
+      margin-top: 30px;
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .site-footer .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* ---------- responsive ---------- */
+    @media (max-width: 760px) {
+      .badges { margin-left: 0; width: 100%; }
+      .project-body { padding: 22px 18px 20px 22px; }
+      .nav { display: none; }
+      .hero { padding: 40px 0 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .btn:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#projects">Перейти к проектам</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">P</span>
+        <span>PageWithProjects</span>
+      </div>
+      <nav class="nav" aria-label="Навигация по проектам">
+        <a href="#project-1">YouTube&nbsp;Summarizer</a>
+        <a href="#project-2">LiveClasses&nbsp;Agent</a>
+        <a href="#project-3">Kufar&nbsp;PC&nbsp;Monitor</a>
+        <a href="#stack">Технологии</a>
+        <a href="#environments">Среды разработки</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+        <span id="themeIcon" aria-hidden="true">☾</span>
+        <span id="themeLabel">Светлая тема</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <h1 id="hero-title">Разработанные проекты: <span class="grad">AI, Cloudflare и автоматизация данных</span></h1>
+        <p class="lead">
+          Три реализованных сервиса: суммаризация YouTube-видео на основе субтитров с помощью LLM,
+          Telegram-агент расписания бесплатных онлайн-трансляций на Cloudflare Workers и система
+          мониторинга объявлений Kufar с извлечением характеристик ПК и оценкой «цена/качество».
+        </p>
+        <ul class="stats">
+          <li><strong>3</strong><span>реализованных проекта</span></li>
+          <li><strong>Gemini 2.5 Flash + Flash-Lite</strong><span>LLM в двух проектах</span></li>
+          <li><strong>Cloudflare Workers + D1</strong><span>серверная платформа</span></li>
+          <li><strong>Telegram Bot</strong><span>интерфейс агента для пользователя</span></li>
+          <li><strong>VS Code, OpenCode, Antigravity</strong><span>среды разработки с AI-агентами</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 class="section-title" id="projects-title">Проекты</h2>
+        <p class="section-sub">
+          Ниже — краткое описание каждого сервиса: решаемая задача, схема работы, ключевые
+          возможности, технологический стек и ссылки на работающие решения.
+        </p>
+
+        <div class="projects">
+          <!-- 1 -->
+          <article class="project" id="project-1" aria-labelledby="project-1-title">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="project-index" aria-hidden="true">1</span>
+                <h3 id="project-1-title">YouTube Summarizer</h3>
+                <div class="badges">
+                  <span class="badge live">Live demo</span>
+                  <span class="badge">Next.js</span>
+                  <span class="badge">Gemini 2.5 Flash</span>
+                </div>
+              </div>
+
+              <p>
+                Веб-сервис суммаризации YouTube-видео: пользователь вставляет ссылку на ролик,
+                сервис получает субтитры видео через сервис <strong>Supadata</strong> и на их основе
+                формирует подытоженное содержание этого видео с помощью модели
+                <strong>Gemini 2.5 Flash</strong>.
+              </p>
+
+              <div class="block">
+                <h4>Как это работает</h4>
+                <ul class="flow">
+                  <li>Ссылка на YouTube</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Supadata: субтитры</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Gemini 2.5 Flash</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Краткое содержание + ключевые моменты</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Реализовано</h4>
+                <ul class="features">
+                  <li>Разбор ссылок разных форматов (<code class="path">youtube.com/watch</code>, <code class="path">youtu.be</code>) с извлечением идентификатора видео.</li>
+                  <li>Получение субтитров через Supadata API с таймаутом 30 секунд и поддержкой разных форматов ответа (строка или массив сегментов).</li>
+                  <li>Промпт, требующий строгий JSON: краткое содержание (до 50 слов) и ключевые моменты с временны́ми метками.</li>
+                  <li>Повторные попытки при перегрузке модели (ошибка 503) с экспоненциальной задержкой.</li>
+                  <li>Защищённый JWT-токеном API-эндпоинт <code class="path">/api/summarize</code> (часть системы аккаунтов) и служебный <code class="path">/api/status</code>.</li>
+                  <li>Юнит-тесты на Vitest и аналитика Vercel Analytics.</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Реализовано, но не активировано в текущем демо</h4>
+                <ul class="features inactive">
+                  <li><span class="pill">не активно</span>Регистрация и вход через Supabase: 5 кредитов при первом обращении и списание 1 кредита за успешный запрос суммаризации.</li>
+                  <li><span class="pill">не активно</span>История суммаризаций пользователя в базе данных и отображение остатка кредитов в интерфейсе.</li>
+                </ul>
+                <p class="block-hint">
+                  Функционал реализован в кодовой базе (Supabase Auth, таблицы
+                  <code class="path">profiles</code> и <code class="path">user_summaries</code>,
+                  проверка JWT в API), но в текущем демо намеренно отключён — чтобы наглядно
+                  показать работоспособность сервиса без регистрации. В самом интерфейсе это
+                  заявлено бейджами «Бесплатно», «Без регистрации», «Любой язык видео».
+                </p>
+              </div>
+
+              <div class="block">
+                <h4>Технологии</h4>
+                <div class="chips">
+                  <span class="chip">Next.js 15</span>
+                  <span class="chip">React 18</span>
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Tailwind CSS 4</span>
+                  <span class="chip">Radix UI</span>
+                  <span class="chip">Supabase (Auth + Postgres)</span>
+                  <span class="chip">Supadata JS SDK</span>
+                  <span class="chip">Google Generative AI — Gemini 2.5 Flash</span>
+                  <span class="chip">Vercel</span>
+                  <span class="chip">Vitest</span>
+                </div>
+              </div>
+
+              <p class="note">
+                Сервис в текущем демо работает <strong>без регистрации</strong>: вход в аккаунт
+                и списание кредитов не активированы, чтобы можно было сразу проверить суммаризацию.
+                Код системы аккаунтов и истории запросов остаётся в проекте и включается
+                активацией соответствующих проверок.
+              </p>
+
+              <div class="actions">
+                <a class="btn primary" href="https://you-tube-summarizer-six.vercel.app/" target="_blank" rel="noopener">
+                  <span class="ico" aria-hidden="true">▶</span>
+                  Открыть демо
+                </a>
+                <a class="btn" href="#stack">
+                  <span class="ico" aria-hidden="true">≡</span>
+                  Общий стек проектов
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 2 -->
+          <article class="project" id="project-2" aria-labelledby="project-2-title">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="project-index" aria-hidden="true">2</span>
+                <h3 id="project-2-title">LiveClasses AI Agent — Telegram-бот расписания трансляций</h3>
+                <div class="badges">
+                  <span class="badge bot">Telegram bot</span>
+                  <span class="badge cloud">Cloudflare Workers</span>
+                  <span class="badge">Cron Triggers</span>
+                </div>
+              </div>
+
+              <p>
+                По заданному таймеру агент выполняет действие и сообщает информацию в Telegram:
+                раз в день он анализирует график бесплатных онлайн-трансляций на
+                <a href="https://liveclasses.ru/" target="_blank" rel="noopener">liveclasses.ru</a>,
+                забирает расписание трансляций к себе в базу данных, а дальше либо пользователь
+                спрашивает в боте о трансляциях, которые ему интересны, либо бот сам присылает
+                уведомление о начале трансляции за 15 минут до её начала.
+              </p>
+
+              <p class="role">
+                Схема решения: <strong>Backend в облаке на Cloudflare по таймеру &rarr; Frontend в Telegram-боте</strong>.
+                Пользовательского веб-интерфейса нет — весь фронтенд вынесен в Telegram-бота.
+              </p>
+
+              <div class="block">
+                <h4>Архитектура и поток данных</h4>
+                <ul class="flow">
+                  <li>Cloudflare Cron (23:55 МСК)</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Парсинг liveclasses.ru</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Cloudflare D1</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Telegram Bot (webhook)</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Ответы и уведомления</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Реализовано</h4>
+                <ul class="features">
+                  <li>Ежедневный сбор расписания бесплатных онлайн-трансляций на «завтра» по Cron <code class="path">55 20 * * *</code>: очистка таблицы <code class="path">broadcasts</code> и запись актуального графика.</li>
+                  <li>Планировщик каждую минуту по Cron <code class="path">* * * * *</code>: поиск трансляций, начинающихся ровно через 15 минут, и рассылка уведомлений всем подписчикам.</li>
+                  <li>Хранение данных в Cloudflare D1: таблица <code class="path">broadcasts</code> (название мастер-класса, время начала, автор, ссылка) и таблица <code class="path">users</code> (chat_id подписчиков).</li>
+                  <li>Telegram-бот как пользовательский фронтенд: приём обновлений через webhook и автоматическое сохранение <code class="path">chat_id</code> при первом обращении.</li>
+                  <li>Чат-бот отвечает на любые вопросы по расписанию: вопрос пользователя и контекст из D1 передаются в Gemini 2.5 Flash-Lite.</li>
+                  <li>Служебная команда «тест» — присылает случайное напоминание о трансляции для проверки генерации сообщений и выборки из БД.</li>
+                  <li>Конфигурация секретов и привязок: <code class="path">TELEGRAM_BOT_TOKEN</code>, <code class="path">GEMINI_API_KEY</code>, binding <code class="path">DB</code> для D1.</li>
+                  <li>Парсинг HTML расписания через cheerio: поиск блока «завтра» по заголовку расписания и извлечение названия, времени, автора и ссылки мастер-класса.</li>
+                  <li>Ручные точки запуска для отладки и повторного прогона: <code class="path">/trigger-parse</code> и <code class="path">/trigger-notify</code>; локальная разработка через <code class="path">wrangler dev</code> и ручной вызов Cron (<code class="path">/__scheduled</code>).</li>
+                  <li>Юнит-тесты на Vitest с пулом воркеров Cloudflare (<code class="path">@cloudflare/vitest-pool-workers</code>) для логики работы с базой и ответами бота.</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Технологии</h4>
+                <div class="chips">
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Cloudflare Workers</span>
+                  <span class="chip">Cloudflare D1 (SQLite)</span>
+                  <span class="chip">Cloudflare Cron Triggers</span>
+                  <span class="chip">Telegram Bot API (webhook)</span>
+                  <span class="chip">Gemini 2.5 Flash-Lite</span>
+                  <span class="chip">cheerio</span>
+                  <span class="chip">Wrangler</span>
+                  <span class="chip">Vitest + vitest-pool-workers</span>
+                </div>
+              </div>
+
+              <p class="note">
+                Парсинг расписания выполняется детерминированно, а LLM используется только для
+                диалоговых ответов пользователю — это экономит запросы к модели и делает данные
+                в базе предсказуемыми.
+              </p>
+
+              <div class="actions">
+                <a class="btn primary" href="https://t.me/LC_CL_NEW22072026_BOT" target="_blank" rel="noopener">
+                  <span class="ico" aria-hidden="true">✈</span>
+                  Открыть Telegram-бот
+                </a>
+                <a class="btn" href="https://liveclasses.ru/" target="_blank" rel="noopener">
+                  <span class="ico" aria-hidden="true">↗</span>
+                  Источник данных liveclasses.ru
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 3 -->
+          <article class="project" id="project-3" aria-labelledby="project-3-title">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="project-index" aria-hidden="true">3</span>
+                <h3 id="project-3-title">Kufar PC Monitor — мониторинг объявлений о компьютерах</h3>
+                <div class="badges">
+                  <span class="badge cloud">Backend-only</span>
+                  <span class="badge">Cloudflare D1</span>
+                  <span class="badge">Queues</span>
+                  <span class="badge">TypeScript</span>
+                </div>
+              </div>
+
+              <p>
+                <strong>Kufar PC Monitor</strong> — сервис мониторинга объявлений на Kufar
+                в категории «Компьютеры и системные блоки». Он регулярно собирает объявления,
+                сохраняет их в собственной базе данных, извлекает из текстов характеристики
+                компьютеров, формирует структурированное представление компонентов и в дальнейшем
+                оценивает соотношение цены и характеристик («цена/качество»), а также отслеживает
+                новые объявления и изменения существующих.
+              </p>
+
+              <p class="role">
+                Проект ориентирован прежде всего на автоматизированный сбор и последующую
+                аналитическую оценку предложений.
+              </p>
+
+              <div class="block">
+                <h4>Задачи проекта</h4>
+                <ul class="features">
+                  <li>Регулярно получать объявления Kufar.</li>
+                  <li>Сохранять их в собственной базе данных.</li>
+                  <li>Извлекать из объявлений характеристики компьютеров.</li>
+                  <li>Формировать структурированное представление компонентов.</li>
+                  <li>В дальнейшем оценивать соотношение цены и характеристик («цена/качество»).</li>
+                  <li>Отслеживать новые объявления и изменения существующих.</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Архитектура и поток обработки</h4>
+                <ul class="flow">
+                  <li>Kufar</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Collector Worker</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Cloudflare Queue</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Analyzer</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Parser</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Normalizer</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Evaluator</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>Cloudflare D1</li>
+                  <li class="arrow" aria-hidden="true">&rarr;</li>
+                  <li>REST API</li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <h4>Реализовано</h4>
+                <ul class="features">
+                  <li>Извлечение характеристик ПК: CPU, GPU, RAM (объём и тип), SSD, HDD, материнская плата, блок питания и его мощность, корпус, кулер.</li>
+                  <li>Нормализация названий комплектующих и ведение каталога комплектующих с оценкой производительности и стоимости на вторичном рынке.</li>
+                  <li>Расчёт предварительной стоимости комплектующих и оценка <code class="path">completeness score</code>, <code class="path">price score</code>, <code class="path">risk score</code> и <code class="path">final score</code> с рекомендацией и перечнем причин.</li>
+                  <li>Таблицы Cloudflare D1: <code class="path">listings</code>, <code class="path">listing_components</code>, <code class="path">component_catalog</code>, <code class="path">price_observations</code>, <code class="path">evaluations</code>.</li>
+                  <li>Хранение исходного текста объявления (<code class="path">raw_text</code>) для повторного анализа и версионирование парсера через <code class="path">parser_version</code>.</li>
+                  <li>Отслеживание жизненного цикла объявления: <code class="path">first_seen_at</code>, <code class="path">last_seen_at</code>, <code class="path">status</code> — объявления не удаляются при исчезновении с Kufar.</li>
+                  <li>REST API для получения сохранённых объявлений и результатов оценки.</li>
+                  <li>Набор локальных <code class="path">.mjs</code>-скриптов для тестов, аудитов, backfill-операций и подготовительных расчётов по выгруженным данным.</li>
+                  <li>Тестовый runner <code class="path">test_runner.mjs</code>; проверка SQL и схемы локально через <code class="path">better-sqlite3</code>; typecheck через TypeScript.</li>
+                </ul>
+              </div>
+
+              <figure class="shot">
+                <a class="shot-link" href="kufar-pc-monitor.Console.jpg" target="_blank" rel="noopener">
+                  <img src="kufar-pc-monitor.Console.jpg"
+                       alt="Консоль Cloudflare D1 базы kufar-pc-monitor: таблица объявлений с ссылками, заголовками, ценами и распознанными характеристиками CPU, GPU, объёмом и типом RAM"
+                       loading="lazy" decoding="async" />
+                </a>
+                <figcaption>
+                  Консоль Cloudflare D1: объявления Kufar с полями «ссылка», «заголовок», «цена»
+                  и разнесёнными на составляющие характеристиками — процессор, видеокарта,
+                  объём и тип оперативной памяти. Нажмите на скриншот, чтобы открыть его в полном размере.
+                </figcaption>
+              </figure>
+
+              <div class="block">
+                <h4>Технологии</h4>
+                <div class="chips">
+                  <span class="chip">Cloudflare Workers</span>
+                  <span class="chip">Cloudflare D1 (SQLite)</span>
+                  <span class="chip">Cloudflare Queues</span>
+                  <span class="chip">Cloudflare Cron Triggers</span>
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Wrangler</span>
+                  <span class="chip">better-sqlite3</span>
+                  <span class="chip">локальные .mjs-скрипты</span>
+                  <span class="chip">test_runner.mjs</span>
+                </div>
+              </div>
+
+              <p class="note">
+                Публичной ссылки у проекта нет: он развивается как backend-сервис, поэтому решение
+                о выборе оптимального варианта системного блока принималось на самостоятельной оценке
+                выгруженных текстов объявлений — цены и комплектующие разнесены во внутренней таблице
+                Cloudflare на составляющие — без разработки графической Frontend-части.
+                Ключевые архитектурные решения MVP: детерминированный парсер вместо LLM на каждой
+                операции, обычный HTTP-fetch вместо Browser Rendering, обязательное сохранение
+                исходного текста объявления для повторного анализа.
+              </p>
+
+              <div class="actions">
+                <span class="badge cloud">Backend-only — публичной ссылки нет</span>
+                <a class="btn" href="#stack">
+                  <span class="ico" aria-hidden="true">≡</span>
+                  Общий стек проектов
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="stack-section" aria-labelledby="stack-title">
+      <div class="wrap">
+        <h2 class="section-title" id="stack-title">Технологии проектов</h2>
+        <p class="section-sub">
+          Общие блоки технологий, которые переиспользуются между всеми тремя сервисами.
+        </p>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <h3>Cloudflare как backend-платформа</h3>
+            <p>
+              Workers (serverless-выполнение), D1 как SQLite-совместимая база,
+              Queues для асинхронной обработки и Cron Triggers как таймер.
+              Используется в Telegram-агенте расписания и в мониторинге объявлений Kufar.
+            </p>
+          </div>
+          <div class="stack-card">
+            <h3>ИИ-интеграции</h3>
+            <p>
+              Google Gemini 2.5 Flash — суммаризация субтитров YouTube; Google Gemini 2.5
+              Flash-Lite — диалоговые ответы Telegram-бота по расписанию.
+              Supadata — источник субтитров видео.
+            </p>
+          </div>
+          <div class="stack-card">
+            <h3>Telegram как интерфейс</h3>
+            <p>
+              Telegram Bot API через webhook: бот принимает вопросы по расписанию,
+              хранит подписчиков и рассылает уведомления о трансляциях за 15 минут до начала.
+            </p>
+          </div>
+          <div class="stack-card">
+            <h3>Данные и контроль качества</h3>
+            <p>
+              Схемы и запросы для D1/SQLite и Supabase Postgres, локальные скрипты аудита
+              и backfill, собственные тестовые runner'ы (.mjs) и Vitest для юнит-тестов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="environments" class="environments-section" aria-labelledby="environments-title">
+      <div class="wrap">
+        <h2 class="section-title" id="environments-title">Среды разработки</h2>
+        <p class="section-sub">
+          Проекты разрабатывались в средах с AI-агентами: основная работа велась в VS Code,
+          дополнительно использовались агентные среды OpenCode и Antigravity.
+        </p>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <h3>VS Code с расширениями</h3>
+            <p>
+              Основная среда разработки: VS Code с расширениями <strong>Cline</strong>,
+              <strong>Kilo</strong> и другими — навигация по коду, терминал, работа с Git,
+              просмотр диффов изменений и запуск задач вместе с AI-агентами прямо в редакторе.
+            </p>
+            <div class="chips">
+              <span class="chip">Cline</span>
+              <span class="chip">Kilo</span>
+              <span class="chip">другие расширения</span>
+            </div>
+          </div>
+
+          <div class="stack-card">
+            <h3>OpenCode</h3>
+            <p>
+              Агентная среда разработки: постановка задач по коду из графического
+              редактора, точечные правки и рефакторинг в рамках проектов.
+            </p>
+            <div class="chips">
+              <span class="chip">агентная IDE</span>
+              <span class="chip">терминальный агент</span>
+              <span class="chip">CLI-воркфлоу</span>
+            </div>
+          </div>
+
+          <div class="stack-card">
+            <h3>Antigravity</h3>
+            <p>
+              Агентная среда разработки от Google: работа с агентом на уровне проекта —
+              планирование изменений, выполнение задач по коду и проверка результата.
+            </p>
+            <div class="chips">
+              <span class="chip">агентная IDE</span>
+              <span class="chip">Google</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="block-hint">
+          Рабочий процесс: задача формулируется агенту текстом, изменения проверяются запуском
+          сборки, тестов и статической проверкой кода, документация ведётся в
+          <code class="path">memory-bank</code> проекта, а ревью правок выполняется по диффам
+          в редакторе.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap row">
+      <p style="margin:0">
+        Портфолио проектов: YouTube Summarizer, LiveClasses AI Agent, Kufar PC Monitor.
+      </p>
+      <p style="margin:0">
+        Статическая страница без сборки и внешних зависимостей — файл
+        <code class="path">index.html</code>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.getElementById('themeToggle');
+      var icon = document.getElementById('themeIcon');
+      var label = document.getElementById('themeLabel');
+      var storageKey = 'pagewithprojects-theme';
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        var light = theme === 'light';
+        if (icon) icon.textContent = light ? '\u2600' : '\u263E';
+        if (label) label.textContent = light ? 'Тёмная тема' : 'Светлая тема';
+        if (button) button.setAttribute('aria-pressed', String(light));
+      }
+
+      var saved = null;
+      try {
+        saved = window.localStorage.getItem(storageKey);
+      } catch (e) {
+        saved = null;
+      }
+
+      var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      applyTheme(saved === 'light' || saved === 'dark' ? saved : (prefersLight ? 'light' : 'dark'));
+
+      if (button) {
+        button.addEventListener('click', function () {
+          var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+          applyTheme(next);
+          try {
+            window.localStorage.setItem(storageKey, next);
+          } catch (e) {
+            /* локальное хранилище недоступно — тема просто не запомнится */
+          }
+        });
+      }
+    })();
+  </script>
+</body>
 </html>
