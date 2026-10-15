@@ -466,6 +466,22 @@
       font-size: 0.88rem;
     }
 
+    /* ---------- business value ---------- */
+    .biz {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 0;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: linear-gradient(120deg, rgba(34, 211, 238, 0.10), rgba(167, 139, 250, 0.10));
+      border: 1px solid var(--border);
+    }
+
+    .biz .ico { font-size: 1.05rem; line-height: 1.6; }
+
+    .biz p { margin: 0; font-size: 0.92rem; }
+
     /* ---------- footer ---------- */
     .site-footer {
       margin-top: 30px;
@@ -624,6 +640,18 @@
                 </div>
               </div>
 
+              <div class="block">
+                <h4>Выгода для бизнеса</h4>
+                <div class="biz">
+                  <span class="ico" aria-hidden="true">💰</span>
+                  <p>
+                    Хостинг — бесплатный тариф Vercel, ИИ — дешёвая модель Gemini Flash:
+                    себестоимость одного саммари — доли цента вместо десятков минут просмотра видео,
+                    а кредитная система ограничивает расходы и готова к монетизации.
+                  </p>
+                </div>
+              </div>
+
               <p class="note">
                 Сервис в текущем демо работает <strong>без регистрации</strong>: вход в аккаунт
                 и списание кредитов не активированы, чтобы можно было сразу проверить суммаризацию.
@@ -713,6 +741,18 @@
                   <span class="chip">cheerio</span>
                   <span class="chip">Wrangler</span>
                   <span class="chip">Vitest + vitest-pool-workers</span>
+                </div>
+              </div>
+
+              <div class="block">
+                <h4>Выгода для бизнеса</h4>
+                <div class="biz">
+                  <span class="ico" aria-hidden="true">💰</span>
+                  <p>
+                    Работает полностью в облаке Cloudflare — 0$ затрат на серверы
+                    и администрирование, экономия на запросах к ИИ до 90% за счет
+                    умного кэширования в БД.
+                  </p>
                 </div>
               </div>
 
@@ -837,6 +877,18 @@
                   <span class="chip">better-sqlite3</span>
                   <span class="chip">локальные .mjs-скрипты</span>
                   <span class="chip">test_runner.mjs</span>
+                </div>
+              </div>
+
+              <div class="block">
+                <h4>Выгода для бизнеса</h4>
+                <div class="biz">
+                  <span class="ico" aria-hidden="true">💰</span>
+                  <p>
+                    Автоматический сбор и разбор сотен объявлений вместо ручного просмотра:
+                    детерминированный парсер без платных LLM-запросов, а оценка
+                    «цена/качество» сразу показывает, какой системный блок выгоднее брать.
+                  </p>
                 </div>
               </div>
 
